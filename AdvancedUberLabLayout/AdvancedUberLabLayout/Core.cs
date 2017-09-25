@@ -128,6 +128,7 @@ namespace AdvancedUberLabLayout
 
             if(Settings.CurrentImageDateDay != UTCTime.Day)
             {
+                DeleteOldImages();
                 #pragma warning disable 4014
                 LoadImage();
                 #pragma warning restore 4014
