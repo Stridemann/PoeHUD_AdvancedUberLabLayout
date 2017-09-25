@@ -1,7 +1,7 @@
-﻿using System.Collections.Generic;
-using System.Windows.Forms;
-using PoeHUD.Hud.Settings;
+﻿using PoeHUD.Hud.Settings;
 using PoeHUD.Plugins;
+using System.Collections.Generic;
+using System.Windows.Forms;
 
 public class Settings : SettingsBase
 {
@@ -9,7 +9,7 @@ public class Settings : SettingsBase
     {
         Enable = true;
         LabType = new ListNode();
-        LabType.Value = "normal";
+        LabType.Value = "uber";
         AutoLabDetection = false;
 
         var screenBottomRight = BasePlugin.API.GameController.Window.GetWindowRectangle().BottomRight;

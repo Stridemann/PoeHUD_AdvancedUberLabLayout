@@ -1,22 +1,22 @@
-﻿using System.Collections.Generic;
-using System.Linq;
-using System.IO;
-using SharpDX;
-using PoeHUD.Models.Enums;
-using PoeHUD.Plugins;
-using PoeHUD.Poe.Components;
-using PoeHUD.Poe.Elements;
-using PoeHUD.Poe.RemoteMemoryObjects;
-using PoeHUD.Poe;
-using PoeHUD.Controllers;
-using PoeHUD.Poe.FilesInMemory;
+﻿using PoeHUD.Controllers;
 using PoeHUD.Hud.UI;
 using PoeHUD.Models;
-using System.Net;
+using PoeHUD.Models.Enums;
+using PoeHUD.Plugins;
+using PoeHUD.Poe;
+using PoeHUD.Poe.Components;
+using PoeHUD.Poe.Elements;
+using PoeHUD.Poe.FilesInMemory;
+using PoeHUD.Poe.RemoteMemoryObjects;
+using SharpDX;
 using System;
-using Bitmap = System.Drawing.Bitmap;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Net;
 using System.Threading;
 using System.Threading.Tasks;
+using Bitmap = System.Drawing.Bitmap;
 
 namespace AdvancedUberLabLayout
 {
