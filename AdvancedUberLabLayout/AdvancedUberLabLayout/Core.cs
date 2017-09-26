@@ -106,7 +106,9 @@ namespace AdvancedUberLabLayout
 
             UpdateTime();
 
-            if(ImageState == ImageCheckState.ReadyToDraw)
+            if(ImageState == ImageCheckState.ReadyToDraw &&
+                !GameController.Game.IngameState.IngameUi.OpenLeftPanel.IsVisible &&
+                !GameController.Game.IngameState.IngameUi.OpenRightPanel.IsVisible)
             {
                 var color = Color.White;
                 color.A = (byte)(Settings.Transparency);
@@ -141,7 +143,7 @@ namespace AdvancedUberLabLayout
             Settings.CurrentImageDateDay = UTCTime.Day;
 
             ImageState = ImageCheckState.Checking;
-            await LoadData(DateTime.Now);
+            await LoadData(UTCTime);
 
             if(ImageState == ImageCheckState.NotFound404)
             {
