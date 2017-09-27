@@ -3,7 +3,7 @@ Name: PoeHUD_AdvancedUberLabLayout
 Repository
 
 Ignore:
-src
+AdvancedUberLabLayout
 .gitignore
 README.md
 LICENSE
