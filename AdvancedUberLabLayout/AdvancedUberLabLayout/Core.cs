@@ -29,7 +29,7 @@ namespace AdvancedUberLabLayout
             PluginName = "Advanced Uber Lab";
         }
         private const string CachedImages = "CachedImages";
-        private const string ImageLink = "http://www.poelab.com/wp-content/uploads/";
+        private const string ImageLink = "http://www.poelab.com/wp-content/labfiles/";
         private const int ImageWidth = 841;
         private const int ImageHeight = 270;
 
@@ -177,9 +177,9 @@ namespace AdvancedUberLabLayout
                 return;
             }
 
-            LogMessage("Loading new lab layout image from site", 3);
+            LogMessage("Loading new lab layout image from site.", 3);
 
-            var ImageUrl = $"http://www.poelab.com/wp-content/uploads/{time.Year}/{month}/" + tempFileName;
+            var ImageUrl = $"https://www.poelab.com/wp-content/labfiles/" + tempFileName;
 
             ImageState = ImageCheckState.Downloading;
 
