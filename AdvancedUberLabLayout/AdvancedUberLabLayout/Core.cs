@@ -20,7 +20,7 @@ using Bitmap = System.Drawing.Bitmap;
 
 namespace AdvancedUberLabLayout
 {
-    //http://www.poelab.com/wp-content/uploads/2017/09/2017-09-25_normal.jpg
+    //https://www.poelab.com/wp-content/labfiles/2019-07-22_uber.jpg
     public class Core : BaseSettingsPlugin<Settings>
     {
         #region ClassVariables
@@ -29,7 +29,7 @@ namespace AdvancedUberLabLayout
             PluginName = "Advanced Uber Lab";
         }
         private const string CachedImages = "CachedImages";
-        private const string ImageLink = "http://www.poelab.com/wp-content/labfiles/";
+        private const string ImageLink = "https://www.poelab.com/wp-content/labfiles/";
         private const int ImageWidth = 841;
         private const int ImageHeight = 270;
 
@@ -179,7 +179,7 @@ namespace AdvancedUberLabLayout
 
             LogMessage("Loading new lab layout image from site.", 3);
 
-            var ImageUrl = $"https://www.poelab.com/wp-content/labfiles/" + tempFileName;
+            var ImageUrl = $"{ImageLink}{tempFileName}";
 
             ImageState = ImageCheckState.Downloading;
 
